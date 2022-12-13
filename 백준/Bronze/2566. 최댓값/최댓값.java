@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int num[][] = new int[10][10];
+        int num[][] = new int[9][9];
         int max = 0;
         int x = 0;
         int y = 0;
