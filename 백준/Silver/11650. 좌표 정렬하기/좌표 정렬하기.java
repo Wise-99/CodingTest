@@ -18,7 +18,7 @@ public class Main{
         
         // 2차원 배열 정렬(람다식)
         Arrays.sort(number, (e1, e2) -> {
-			if(e1[0] == e2[0]) {
+			if(e1[0] == e2[0]) { // 첫번째 원소가 같다면 두번째 원소 비교
 				return e1[1] - e2[1];
 			} else {
 				return e1[0] - e2[0];
