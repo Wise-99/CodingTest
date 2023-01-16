@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        int hour = sc.nextInt(); // 시
+        int min = sc.nextInt(); // 분
+        
+        if(min < 45){
+            hour--;
+            min = 60 - (45 - min);
+            if(hour < 0) {
+                hour = 23;
+            }
+        } else {
+            min -= 45;
+        }
+        
+        System.out.println(hour + " " + min);
+    }
+}
