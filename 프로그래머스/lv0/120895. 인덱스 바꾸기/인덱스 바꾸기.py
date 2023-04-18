@@ -1,9 +1,6 @@
 def solution(my_string, num1, num2):
-    temp = ''
-    str_list = list(my_string)
     
-    temp = str_list[num1]
-    str_list[num1] = str_list[num2]
-    str_list[num2] = temp
+    s = list(my_string)
+    s[num1],s[num2] = s[num2],s[num1]
     
-    return ''.join(s for s in str_list)
+    return ''.join(s)
