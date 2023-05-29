@@ -1,6 +1,5 @@
 class Solution {
     fun solution(clothes: Array<Array<String>>): Int {
-        var answer = 0
         val hashMap : HashMap<String, Int> = HashMap() // 의상 종류를 저장할 해시 맵
         
         for(cloth in clothes){
@@ -11,7 +10,5 @@ class Solution {
         
         // 경우의 수 계산 (의상 종류1 * 의상 종류2 * ... 의상 종류n) - 1
         return hashMap.values.fold(1, {total, num -> total * num}) - 1
-        
-        return answer
     }
 }
