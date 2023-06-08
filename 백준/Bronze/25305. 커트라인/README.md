@@ -8,7 +8,7 @@
 
 ### 분류
 
-구현(implementation), 정렬(sorting)
+구현, 정렬
 
 ### 문제 설명
 
